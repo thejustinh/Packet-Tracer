@@ -1,0 +1,95 @@
+NAME: Justin Herrera LAB: Noon
+
+
+
+Comments for TA:
+
+
+
+
+Functions used:
+/****************************************************************************
+ * A helper method to determine the source and destination port when sniffing
+ * a TCP or UDP  packet.
+ * 
+ * @param int port - a port number
+ ***************************************************************************/
+void evaluate_port(int port)
+
+/****************************************************************************
+ * A helper method to determine if certain flags are set in a TCP packet.
+ *
+ * @param int flags
+ ****************************************************************************/
+void evaluate_flags(int flags)
+
+/******************************************************************************
+ * A helper method to cacluate the TCP checksum given a packet's tcp pseudo
+ * header, and tcp segment. The checksum function takes these two fields and 
+ * calculates the checksum over the length.
+ *
+ * @param const u_char *pkt_data - packet data
+ * @param struct tcp_pseudo * tcp_ps - the pseudo header to be used
+ * @param unsigned short tcp_checksum - given value (in pkt) of tcp checksum
+ *****************************************************************************/
+void tcp_checksum_calc(const u_char *pkt_data, struct tcp_pseudo * tcp_ps,
+   unsigned short tcp_checksum)
+
+/******************************************************************************
+ * A helper method to create a tcp pseudo header for a checksum calculation.
+ *
+ * @param const u_char *pkt_data - packet data
+ * @param struct ip_header *ip_header - used for fields in pseudo header
+ * @param struct tcp_header *tcp_header - used for tcp segment calculation
+ *****************************************************************************/
+void evaluate_tcp_checksum(const u_char *pkt_data, struct ip_header *ip_header,
+   struct tcp_header* tcp_header)
+
+/******************************************************************************
+ * A helper method to create a tcp struct given the packet data and prints
+ * out the required fields.
+ *
+ * @param const u_char *pkt_data - packet data
+ *****************************************************************************/
+void read_tcp(const u_char *pkt_data)
+
+/******************************************************************************
+ * A helper method to read a packet and create a UDP struct and print out
+ * the required fields.
+ *
+ * @param const u_char *pkt_data - packet data
+ * @param struct ip_header *ip_header - used to extract ip_header length
+ *****************************************************************************/
+void read_udp(const u_char *pkt_data, struct ip_header * ip_header)
+
+/******************************************************************************
+ * A helper method to read a packet, create an icmp struct, and print out the 
+ * required fields.
+ *
+ * @param const u_char *pkt_data - packet data
+ * @param struct ip_header *ip_header - used to extract length of ip header
+ *****************************************************************************/
+void read_icmp(const u_char *pkt_data, struct ip_header * ip_header)
+
+/******************************************************************************
+ * A method to read a packet, create an IP header struct, print out the 
+ * required fields, and call another function determined by the type field.
+ *
+ * @param const u_char *pkt_data - packet data
+ *****************************************************************************/
+void read_ip(const u_char *pkt_data)
+
+/******************************************************************************
+ * A method to read a packet, create an ARP struct, and print out the required
+ * fields.
+ *
+ * @param const u_char *pkt_data - packet data
+ *****************************************************************************/
+void read_arp(const u_char *pkt_data)
+
+/******************************************************************************
+ * A method to iteratively read and evaluate each packet in a pcap file.
+ *
+ * @param pcap_t *p - a pcap file to read from
+ *****************************************************************************/
+void read_packets(pcap_t *p)

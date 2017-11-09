@@ -1,0 +1,92 @@
+
+Packet number: 1  Packet Len: 385
+
+	Ethernet Header
+		Dest MAC: 1:0:5e:7f:ff:fa
+		Source MAC: 10:da:43:85:37:bb
+		Type: IP
+
+	IP Header
+		IP Version: 4
+		Header Len (bytes): 20
+		TOS subfields:
+		   Diffserv bits: 0
+		   ECN bits: 0
+		TTL: 4
+		Protocol: UDP
+		Checksum: Correct (0xc3d6)
+		Sender IP: 192.168.1.1
+		Dest IP: 239.255.255.250
+
+	UDP Header
+		Source Port:  1900
+		Dest Port:  1900
+
+Packet number: 2  Packet Len: 330
+
+	Ethernet Header
+		Dest MAC: 1:0:5e:7f:ff:fa
+		Source MAC: 10:da:43:85:37:bb
+		Type: IP
+
+	IP Header
+		IP Version: 4
+		Header Len (bytes): 20
+		TOS subfields:
+		   Diffserv bits: 0
+		   ECN bits: 0
+		TTL: 4
+		Protocol: UDP
+		Checksum: Correct (0xc40d)
+		Sender IP: 192.168.1.1
+		Dest IP: 239.255.255.250
+
+	UDP Header
+		Source Port:  1900
+		Dest Port:  1900
+
+Packet number: 3  Packet Len: 321
+
+	Ethernet Header
+		Dest MAC: 1:0:5e:7f:ff:fa
+		Source MAC: 10:da:43:85:37:bb
+		Type: IP
+
+	IP Header
+		IP Version: 4
+		Header Len (bytes): 20
+		TOS subfields:
+		   Diffserv bits: 0
+		   ECN bits: 0
+		TTL: 4
+		Protocol: UDP
+		Checksum: Correct (0xc416)
+		Sender IP: 192.168.1.1
+		Dest IP: 239.255.255.250
+
+	UDP Header
+		Source Port:  1900
+		Dest Port:  1900
+
+Packet number: 4  Packet Len: 395
+
+	Ethernet Header
+		Dest MAC: 1:0:5e:7f:ff:fa
+		Source MAC: 10:da:43:85:37:bb
+		Type: IP
+
+	IP Header
+		IP Version: 4
+		Header Len (bytes): 20
+		TOS subfields:
+		   Diffserv bits: 0
+		   ECN bits: 0
+		TTL: 4
+		Protocol: UDP
+		Checksum: Correct (0xc3cc)
+		Sender IP: 192.168.1.1
+		Dest IP: 239.255.255.250
+
+	UDP Header
+		Source Port:  1900
+		Dest Port:  1900
