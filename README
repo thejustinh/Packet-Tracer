@@ -1,11 +1,7 @@
-NAME: Justin Herrera LAB: Noon
+This program is used to print data packet information given a pcap file.
 
-
-
-Comments for TA:
-
-
-
+To run the program: 
+usage: ./trace pcapFile
 
 Functions used:
 /****************************************************************************
